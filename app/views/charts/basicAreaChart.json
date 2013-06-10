@@ -1,0 +1,49 @@
+{
+  "title": {
+    "text": "Sales Profit/Loss"
+  },
+  "subtitle": {
+    "text": "Calculated Annually"
+  },
+  "xAxis": {
+    "labels": {}
+  },
+  "tooltip": {},
+  "plotOptions": {
+    "area": {
+      "pointStart": 2000,
+      "marker": {
+        "enabled": false,
+        "symbol": "circle",
+        "radius": 2,
+        "states": {
+          "hover": {
+            "enabled": true
+          }
+        }
+      }
+    }
+  },
+  "series": [
+    {
+      "name": "Revenue",
+      "data": [
+        400,
+        194,
+        301,
+        130,
+        300
+      ]
+    },
+    {
+      "name": "Cost",
+      "data": [
+        123,
+        325,
+        120,
+        300,
+        300
+      ]
+    }
+    ]
+}

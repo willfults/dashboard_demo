@@ -1,15 +1,30 @@
+<div class="header">
+	<div class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Add/Remove Widgets</a>
+	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+	    <li><a tabindex="-1" href="#" onclick="deleteWidget('welcome')">Delete welcome widget</a></li>
+	    <li><a tabindex="-1" href="#"  onclick="deleteWidget('synergy')">Delete Server Load widget</a></li>
+	    <li><a tabindex="-1" href="#"  onclick="deleteWidget('buzzwords')">Delete CallTrack Queues Widget</a></li>
+	    <li class="divider"></li>
+	    <li><a tabindex="-1" href="#" id="fullscreen">Go Fullscreen</a></li>
+	    <li class="divider"></li>
+	    <li><a tabindex="-1" href="#" onclick="addWidget()">Add example widget</a></li>
+    </ul>
+    </div>
+</div>
 
-      <div class="gridster" style="width: 1240px;">
-          <ul style="height: 480px; position: relative; ">
-            <li data-row="1" data-col="1" data-sizex="2" data-sizey="1" class="gs_w"></li>
-            <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="gs_w"></li>
+  <div class="gridster" style="width: 1240px;">
+      <ul style="height: 480px; position: relative; ">
+        <li data-row="1" data-col="1" data-sizex="2" data-sizey="1" class="gs_w"></li>
+        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="gs_w"></li>
 
-            <li data-row="3" data-col="2" data-sizex="2" data-sizey="1" class="gs_w"></li>
-            <li data-row="1" data-col="3" data-sizex="2" data-sizey="2" class="gs_w"></li>
+        <li data-row="3" data-col="2" data-sizex="2" data-sizey="1" class="gs_w"></li>
+        <li data-row="1" data-col="3" data-sizex="2" data-sizey="2" class="gs_w"></li>
 
-            <li data-row="2" data-col="1" data-sizex="2" data-sizey="1" class="gs_w"></li>
+        <li data-row="2" data-col="1" data-sizex="2" data-sizey="1" class="gs_w"></li>
 
-			<li data-row="1" data-col="5" data-sizex="2" data-sizey="3" class="gs_w"></li>
-            
-          </ul>
-        </div>
+		<li data-row="1" data-col="5" data-sizex="2" data-sizey="2" class="gs_w" id="container"></li>
+        
+      </ul>
+    </div>
+
