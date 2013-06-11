@@ -20,6 +20,15 @@ $(document).ready(function () {
     	$(document).fullScreen(true);
     });
     
+    $('.icon-trash').click(function(){
+    	var gridsters = $(".gridster ul").gridster().data('gridster');
+    	var element = $(this).parent() 
+    	bootbox.confirm("Are you sure you want to delete this widget?", function(result) {
+			if(result){
+				gridsters.remove_widget(element);
+			}
+		}); 
+    });
 });
 
  function deleteWidget(id){
