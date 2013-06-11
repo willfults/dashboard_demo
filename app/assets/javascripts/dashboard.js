@@ -5,6 +5,21 @@ $(document).ready(function () {
         widget_margins: [10, 10],
         widget_base_dimensions: [180, 180]
     });
+    
+
+	$('#save-gridster').click(function(){
+		//$('.gridster').html() must run before onload
+      	$.cookie('layout', $('.gridster').html(), { expires: 7000, path: '/'  });
+    });
+    
+    //hide non IE elements
+    if (/*@cc_on!@*/false) {
+	  $(".noie").css("display","none");
+	}
+    $('#fullscreen').click(function(){
+    	$(document).fullScreen(true);
+    });
+    
 });
 
  function deleteWidget(id){

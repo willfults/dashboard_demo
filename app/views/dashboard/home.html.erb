@@ -5,8 +5,8 @@
 	    <li><a tabindex="-1" href="#" onclick="deleteWidget('welcome')">Delete welcome widget</a></li>
 	    <li><a tabindex="-1" href="#"  onclick="deleteWidget('synergy')">Delete Server Load widget</a></li>
 	    <li><a tabindex="-1" href="#"  onclick="deleteWidget('buzzwords')">Delete CallTrack Queues Widget</a></li>
-	    <li class="divider"></li>
-	    <li><a tabindex="-1" href="#" id="fullscreen">Go Fullscreen</a></li>
+	    <li class="divider" class="noie"></li>
+	    <li class="noie"><a tabindex="-1" href="#" id="fullscreen" >Go Fullscreen</a></li>
 	    <li class="divider"></li>
 	    <li><a tabindex="-1" href="#" onclick="addWidget()">Add example widget</a></li>
     </ul>
@@ -15,16 +15,19 @@
 
   <div class="gridster" style="width: 1240px;">
       <ul style="height: 480px; position: relative; ">
-        <li data-row="1" data-col="1" data-sizex="2" data-sizey="1" class="gs_w"></li>
-        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="gs_w"></li>
-
-        <li data-row="3" data-col="2" data-sizex="2" data-sizey="1" class="gs_w"></li>
-        <li data-row="1" data-col="3" data-sizex="2" data-sizey="2" class="gs_w"></li>
-
-        <li data-row="2" data-col="1" data-sizex="2" data-sizey="1" class="gs_w"></li>
-
-		<li data-row="1" data-col="5" data-sizex="2" data-sizey="2" class="gs_w" id="container"></li>
-        
+        <li data-row="1" data-col="1" data-sizex="4" data-sizey="2" class="gs_w" id="spline"></li>
+		<li data-row="1" data-col="5" data-sizex="2" data-sizey="2" class="gs_w" id="piechart"></li>
+        <li data-row="3" data-col="1" data-sizex="2" data-sizey="1" class="gs_w" style="text-align: center" id="widget-text">
+        	<h3 class="title">CallSource Executive Dashboard</h3>
+			<p class="more-info">This is your shiny new dashboard</p>
+			<p class="updated-at">Protip: You can drag the widgets around!</p>
+			<span class="icon-trash bottomcorner"></span>
+        </li>
+        <li data-row="3" data-col="3" data-sizex="1" data-sizey="1" class="gs_w" id="server_load">
+        	<h3 class="title" >Server load</h3> 
+        	<input type="text" class="dial" data-min="0" data-max="100" value="50" data-width="100" data-angleArc=250 data-angleOffset=-125 data-readOnly=true>
+        	<span class="icon-trash icon-white bottomcorner"></span>
+        </li>
       </ul>
     </div>
 

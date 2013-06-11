@@ -12,7 +12,7 @@ $(function () {
 		});
 		
 		// Build the chart
-        $('#container').highcharts({
+        $('#piechart').highcharts({
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
@@ -41,7 +41,7 @@ $(function () {
             },
             series: [{
                 type: 'pie',
-                name: 'Browser share',
+                name: 'Market share',
                 data: [
                     ['Auto',   45.0],
                     ['Home',       26.8],
