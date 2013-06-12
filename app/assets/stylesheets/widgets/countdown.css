@@ -3,7 +3,7 @@
     margin: 10px 7px;
     color: #000;
   }
-  .desc { margin: 7px 3px; }
+  .desc { margin: 0px 3px 0px 20px; }
   .desc div {
     float: left;
     font-family: Arial;
@@ -12,4 +12,7 @@
     font-size: 13px;
     font-weight: bold;
     color: #000;
+  }
+  .counter{
+  	padding-left:20px;
   }
