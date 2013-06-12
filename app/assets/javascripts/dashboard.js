@@ -38,5 +38,10 @@ $(document).ready(function () {
  
  function addWidget(){
  	 var gridstered = $(".gridster ul").gridster().data('gridster');
- 	gridstered.add_widget('<li class="new" style="background-color: black">A new example widget, draggable...</li>', 1, 1, 1, 1);
+ 	gridstered.add_widget('<li class="gs_w"><h3 class="title" style="text-align: center">Time until SocialU launch</h3><div class="counter"></div><div class="desc"><div>Days</div><div>Hours</div><div>Minutes</div><div>Seconds</div></div></li>', 3, 1, 1, 1);
+ 	$('.counter').countdown({
+        startTime: "20:1:1:1",
+        stepTime: 1,
+    });
+    $('#adder').hide();
  }

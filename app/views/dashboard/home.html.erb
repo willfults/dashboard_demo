@@ -1,18 +1,18 @@
 <div class="header">
-	<div class="dropdown">
-		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Add Widget</a>
-	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-	    <li class="noie"><a tabindex="-1" href="#" id="fullscreen" >Go Fullscreen</a></li>
-	    <li class="divider"></li>
-	    <li><a tabindex="-1" href="#" onclick="addWidget()">Add example widget</a></li>
-    </ul>
-    </div>
+	<a tabindex="-1" href="#" onclick="addWidget()" class="btn" id="adder">Add example widget</a>
+    <a tabindex="-1" href="#" id="fullscreen" class="noie btn">Go Fullscreen</a>
 </div>
 
   <div class="gridster" style="width: 1240px;">
       <ul style="height: 480px; position: relative; ">
-        <li data-row="1" data-col="1" data-sizex="4" data-sizey="2" class="gs_w" id="spline"></li>
-		<li data-row="1" data-col="5" data-sizex="2" data-sizey="2" class="gs_w" id="piechart"></li>
+        <li data-row="1" data-col="1" data-sizex="4" data-sizey="2" class="gs_w">
+        	<div id="spline"></div>
+			<span class="icon-trash bottomcorner"></span>
+        </li>
+		<li data-row="1" data-col="5" data-sizex="2" data-sizey="2" class="gs_w" >
+			<div id="piechart"></div>
+			<span class="icon-trash bottomcorner"></span>
+		</li>
         <li data-row="3" data-col="1" data-sizex="2" data-sizey="1" class="gs_w" style="text-align: center" id="widget-text">
         	<h3 class="title">CallSource Executive Dashboard</h3>
 			<p class="more-info">This is your shiny new dashboard</p>
