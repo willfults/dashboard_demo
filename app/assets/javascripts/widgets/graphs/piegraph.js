@@ -22,6 +22,7 @@ $(function () {
 	                plotBorderWidth: null,
 	                plotShadow: false,
 	                height: 340,
+	                backgroundColor: 'rgba(255, 255, 255, 0.8)',
 	            },
 	            title: {
 	                text: 'CallSource sales by division'
