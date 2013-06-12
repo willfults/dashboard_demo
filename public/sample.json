@@ -1,0 +1,20 @@
+[{
+    "name": "Auto",
+    "data": 45.0
+}, {
+    "name": "Home",
+    "data": 26.8
+}, {
+    "name": "Phone",
+    "data": 12.8
+}, {
+    "name": "IT",
+    "data": 8.5
+},{
+    "name": "Medical",
+    "data": 6.2
+},{
+    "name": "Other",
+    "data": 0.7
+}]
+		
